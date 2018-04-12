@@ -1,0 +1,45 @@
+﻿@using MaerskApplication.Models
+@model List<ShippingDetail>
+
+@{
+    ViewBag.Title = "Shipping";
+}
+
+<h2>Shipping</h2>
+
+<div class="col-md-12 " style="text-align:right">
+    <a href="AddShipping" class="btn btn-default">Add Shipping</a>
+</div>
+<table class="table col-md-12">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Departure Date</th>
+            <th>Departure Location</th>
+            <th>Arrival Date</th>
+            <th>Arrival Location</th>
+            <th>Available Slots</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            var item = Model[i];
+
+            <tr>
+                <td>@item.Id</td>
+
+                <td>@item.DateFrom.ToString("dd/MM/yyyy")</td>
+
+                <td>@item.Source</td>
+
+                <td>@item.DateTo.ToString("dd/MM/yyyy")</td>
+
+                <td>@item.Destination</td>
+
+                <td>@item.AvailableSlots</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

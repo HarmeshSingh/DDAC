@@ -1,0 +1,39 @@
+﻿@using MaerskApplication.Models
+@model List<Users>
+
+@{
+    ViewBag.Title = "Agents";
+}
+
+<h2>Agents</h2>
+
+<div class="col-md-12 " style="text-align:right">
+    <a href="AddAgent" class="btn btn-default">Register Agent</a>
+</div>
+<table class="table col-md-12">
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>Username</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(int i = 0; i < Model.Count; i ++)
+        {
+            var item = Model[i];
+
+            <tr>
+                <td>@(i + 1)</td>
+
+                <td>@item.Name</td>
+
+                <td>@item.Username</td>
+
+                <td>@item.Password</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

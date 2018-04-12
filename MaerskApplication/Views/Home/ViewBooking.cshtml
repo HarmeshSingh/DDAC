@@ -1,0 +1,42 @@
+﻿@using MaerskApplication.Models
+@model List<Booking>
+
+@{
+    ViewBag.Title = "Booking";
+}
+
+<h2>Booking</h2>
+
+<table class="table col-md-12">
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>Shipping Id</th>
+            <th>Shipping Info</th>
+            <th>Customer Name</th>
+            <th>Company Name</th>
+            <th>Slots Booked</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            var item = Model[i];
+
+            <tr>
+                <td>@(i + 1)</td>
+
+                <td>@item.ShippingId</td>
+
+                <td>@(item.ShippingDetail.Source) - @(item.ShippingDetail.Destination)</td>
+
+                <td>@item.Customer.Name</td>
+
+                <td>@item.Customer.CompanyName</td>
+
+                <td>@item.Slots</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

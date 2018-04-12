@@ -1,0 +1,34 @@
+﻿@using MaerskApplication.Models
+@model List<Customer>
+
+@{
+    ViewBag.Title = "Customers";
+}
+
+<h2>Customers</h2>
+
+<div class="col-md-12 " style="text-align:right">
+    <a href="AddCustomer" class="btn btn-default">Register Customer</a>
+</div>
+<table class="table col-md-12">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Company Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var customer in Model)
+        {
+            <tr>
+                <td>@customer.Id</td>
+
+                <td>@customer.Name</td>
+
+                <td>@customer.CompanyName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+

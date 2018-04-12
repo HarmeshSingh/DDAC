@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaerskApplication", "MaerskApplication\MaerskApplication.csproj", "{15996D4A-10B9-45F3-8ED6-5FB2CFDFFBDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15996D4A-10B9-45F3-8ED6-5FB2CFDFFBDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15996D4A-10B9-45F3-8ED6-5FB2CFDFFBDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15996D4A-10B9-45F3-8ED6-5FB2CFDFFBDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15996D4A-10B9-45F3-8ED6-5FB2CFDFFBDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6999146B-72C7-41DC-BC9A-2B10543E1E35}
+	EndGlobalSection
+EndGlobal
